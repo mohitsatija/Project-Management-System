@@ -1,5 +1,5 @@
 import React from 'react'
-import { ManagerLayout } from "@/components/Manager-layout"
+import { ManagerLayout } from "@/components/manager-layout"
 
 const ManageUser = () => {
   return (
