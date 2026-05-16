@@ -79,7 +79,7 @@ export function SupervisorSidebar({ ...props }) {
               </div>
               <div className="grid flex-1 text-left text-sm leading-tight">
                 <span className="truncate font-semibold text-base">
-                  Project Manager
+                  ProjectHub
                 </span>
                 <span className="truncate text-xs">Supervisor Panel</span>
               </div>
