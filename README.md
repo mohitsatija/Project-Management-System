@@ -1,50 +1,91 @@
-# Project Manager System
+# 🚀 Project Manager System
 
-A comprehensive project management system built with React.js frontend and Node.js backend. This system allows supervisors, managers, and team members to collaborate efficiently on projects and tasks.
+A comprehensive full-stack project management system built with **React.js**, **Node.js**, **Express.js**, and **MongoDB**. This platform enables supervisors, managers, and team members to collaborate efficiently through project tracking, task management, and budget monitoring.
+
+---
+
+## 🌐 Live Demo
+
+🔗 [View ProjectHub Live](https://projecthub-devnexus.vercel.app/)
+
+---
 
 ## 🌟 Features
 
-- **Role-based Authentication**: Supervisor, Manager, and Member roles with different permissions
-- **Project Management**: Create, assign, and track projects with budgets and deadlines
-- **Task Management**: Break down projects into manageable tasks with todo checklists
-- **Budget Tracking**: Monitor project and task budgets with detailed history
-- **Real-time Dashboard**: Interactive charts and statistics for each role
-- **User Management**: Profile management with image uploads
-- **Responsive Design**: Modern UI that works on all devices
+- 🔐 **Role-based Authentication** — Supervisor, Manager, and Member access control
+- 📁 **Project Management** — Create, assign, and monitor projects
+- ✅ **Task Management** — Assign tasks with todo checklists and progress tracking
+- 💰 **Budget Tracking** — Manage project and task budgets with history logs
+- 📊 **Interactive Dashboards** — Analytics and charts for each role
+- 👤 **Profile Management** — User profile updates with image uploads
+- 📱 **Responsive Design** — Optimized for desktop, tablet, and mobile
+- ⚡ **Modern UI/UX** — Clean and intuitive interface using Tailwind CSS and ShadCN
+
+---
 
 ## 🏗️ Architecture
 
-```
+```bash
 ProjectManager/
 ├── frontend/          # React.js application (Vite + Tailwind CSS)
 ├── backend/           # Node.js API server (Express + MongoDB)
-├── README.md          # This file
-└── .gitignore         # Git ignore rules
+├── README.md
+└── .gitignore
 ```
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **React.js** — UI framework
+- **Vite** — Fast build tool
+- **Tailwind CSS** — Styling framework
+- **ShadCN UI** — Reusable UI components
+- **Recharts** — Data visualization
+- **React Router** — Routing and navigation
+- **Axios** — API communication
+
+### Backend
+- **Node.js** — Runtime environment
+- **Express.js** — Backend framework
+- **MongoDB** — NoSQL database
+- **Mongoose** — MongoDB ODM
+- **JWT Authentication** — Secure authentication
+- **Bcrypt.js** — Password hashing
+- **Multer** — File uploads
+
+---
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
 - Node.js (v16 or higher)
-- MongoDB Atlas account or local MongoDB installation
+- MongoDB Atlas account or local MongoDB
 - Git
 
-### 1. Clone the Repository
+---
+
+## 📦 Installation & Setup
+
+### 1️⃣ Clone the Repository
 
 ```bash
 git clone <repository-url>
 cd ProjectManager
 ```
 
-### 2. Backend Setup
+---
+
+### 2️⃣ Backend Setup
 
 ```bash
 cd backend
 npm install
 ```
 
-Create a `.env` file in the backend directory:
+Create a `.env` file inside the backend folder:
 
 ```env
 MONGO_URI=your_mongodb_connection_string
@@ -60,7 +101,9 @@ Start the backend server:
 npm start
 ```
 
-### 3. Frontend Setup
+---
+
+### 3️⃣ Frontend Setup
 
 ```bash
 cd ../frontend
@@ -68,165 +111,212 @@ npm install
 npm run dev
 ```
 
+---
+
 ## 🔐 Test Credentials
-Use users.txt
 
-**Password for all users:** `password123`
+Use `users.txt`
 
-### Sample Accounts:
-- **Supervisor:** supervisor1@gmail.com
-- **Manager:** manager1@gmail.com
-- **Member:** member1@gmail.com
+### Password for all users:
+
+```txt
+password123
+```
+
+### Sample Accounts
+
+- 👨‍💼 **Supervisor:** supervisor1@gmail.com
+- 🧑‍💻 **Manager:** manager1@gmail.com
+- 👨‍🔧 **Member:** member1@gmail.com
+
+---
 
 ## 📱 User Roles
 
-### Supervisor
+### 👨‍💼 Supervisor
 - Create and manage projects
 - Assign managers to projects
-- Monitor overall progress and budgets
-- View comprehensive analytics
+- Monitor budgets and analytics
+- Track overall project progress
 
-### Manager
+### 🧑‍💻 Manager
 - Manage assigned projects
-- Create and assign tasks to team members
-- Track project progress and budgets
+- Create and assign tasks
+- Monitor deadlines and progress
 - Generate reports
 
-### Member
+### 👨‍🔧 Member
 - View assigned tasks
-- Update task progress and todo items
-- Track personal workload
-- Submit time and progress reports
+- Update task progress
+- Manage todo checklists
+- Submit work updates
 
-## 🛠️ Technology Stack
-
-### Frontend
-- **React.js** - UI framework,With ShadCN components
-- **Vite** - Build tool
-- **Tailwind CSS** - Styling
-- **Recharts** - Data visualization
-- **React Router** - Navigation
-- **Axios** - HTTP client
-
-### Backend
-- **Node.js** - Runtime environment
-- **Express.js** - Web framework
-- **MongoDB** - Database
-- **Mongoose** - ODM
-- **JWT** - Authentication
-- **Bcrypt** - Password hashing
-- **Multer** - File uploads
+---
 
 ## 📂 Project Structure
 
 ### Backend Structure
-```
-backend/
-├── controllers/       # Route controllers
-├── models/           # Database models
-├── routes/           # API routes
-├── middlewares/      # Custom middlewares
-├── uploads/          # File uploads
-├── config/           # Database configuration
-├── server.js         # Main server file
 
+```bash
+backend/
+├── controllers/
+├── models/
+├── routes/
+├── middlewares/
+├── uploads/
+├── config/
+└── server.js
 ```
 
 ### Frontend Structure
-```
+
+```bash
 frontend/
 ├── src/
-│   ├── components/   # Reusable components
-│   ├── pages/        # Page components
-│   ├── context/      # React context
-│   ├── hooks/        # Custom hooks
-│   ├── lib/          # Utilities
-│   ├── routes/       # Route components
-│   └── utils/        # API utilities
-├── public/           # Static assets
-└── index.html        # Entry point
+│   ├── components/
+│   ├── pages/
+│   ├── context/
+│   ├── hooks/
+│   ├── lib/
+│   ├── routes/
+│   └── utils/
+├── public/
+└── index.html
 ```
+
+---
 
 ## 🔧 Development Commands
 
 ### Backend
+
 ```bash
-# Start development server
 npm start
+```
 
 ### Frontend
+
 ```bash
-
-# Start development server
 npm run dev
-
-# Build for production
 npm run build
-
-# Preview production build
 npm run preview
 ```
+
+---
 
 ## 📊 API Endpoints
 
 ### Authentication
-- `POST /api/auth/login` - User login
-- `POST /api/auth/register` - User registration
-- `GET /api/auth/me` - Get current user
+
+```http
+POST /api/auth/login
+POST /api/auth/register
+GET  /api/auth/me
+```
 
 ### Projects
-- `GET /api/projects` - Get all projects
-- `POST /api/projects` - Create project
-- `PUT /api/projects/:id` - Update project
-- `DELETE /api/projects/:id` - Delete project
+
+```http
+GET    /api/projects
+POST   /api/projects
+PUT    /api/projects/:id
+DELETE /api/projects/:id
+```
 
 ### Tasks
-- `GET /api/tasks` - Get all tasks
-- `POST /api/tasks` - Create task
-- `PUT /api/tasks/:id` - Update task
-- `DELETE /api/tasks/:id` - Delete task
+
+```http
+GET    /api/tasks
+POST   /api/tasks
+PUT    /api/tasks/:id
+DELETE /api/tasks/:id
+```
 
 ### Users
-- `GET /api/users` - Get all users
-- `PUT /api/users/profile` - Update profile
-- `POST /api/users/upload` - Upload profile image
+
+```http
+GET  /api/users
+PUT  /api/users/profile
+POST /api/users/upload
+```
+
+---
 
 ## 🐛 Troubleshooting
 
 ### Common Issues
 
-1. **Database Connection Error**
-   - Check your MongoDB connection string
-   - Ensure your IP is whitelisted in MongoDB Atlas
+### 1️⃣ Database Connection Error
+- Verify MongoDB connection string
+- Ensure your IP is whitelisted in MongoDB Atlas
 
-2. **Port Already in Use**
-   - Change the PORT in `.env` file
-   - Kill existing processes using the port
+### 2️⃣ Port Already in Use
+- Change the PORT value in `.env`
+- Stop processes using the same port
 
-3. **Module Not Found**
-   - Run `npm install` in both frontend and backend directories
-   - Clear node_modules and reinstall if needed
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 🆘 Support
-
-For support, email your-email@example.com or create an issue in the repository.
-
-## 🔮 Future Enhancements
-
-- Real-time notifications
-- File attachments for tasks
-- Time tracking functionality
-- Advanced reporting and analytics
-- Mobile application
-- Integration with third-party tools
+### 3️⃣ Module Not Found
+- Run `npm install` in both frontend and backend
+- Delete `node_modules` and reinstall dependencies
 
 ---
 
+## 🔮 Future Enhancements
+
+- 🔔 Real-time notifications
+- 📎 File attachments for tasks
+- ⏱️ Time tracking system
+- 📈 Advanced analytics and reporting
+- 📱 Mobile application
+- 🔗 Third-party integrations
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+### Steps to Contribute
+
+1. Fork the repository
+
+2. Create your feature branch
+
+```bash
+git checkout -b feature/amazing-feature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add amazing feature"
+```
+
+4. Push to GitHub
+
+```bash
+git push origin feature/amazing-feature
+```
+
+5. Open a Pull Request 🚀
+
+---
+
+## 👨‍💻 Author
+
+### Mohit Satija
+
+- GitHub: https://github.com/mohitsatija
+
+---
+
+## 🆘 Support
+
+If you encounter any issues or have suggestions, feel free to open an issue in the repository.
+
+---
+
+## ⭐ Show Your Support
+
+If you liked this project, give it a ⭐ on GitHub!
+
+---
